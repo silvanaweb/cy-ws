@@ -1,0 +1,18 @@
+{
+  "name": "cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "cy:open": "node_modules/.bin/cypress open",
+    "cy:shop": "node_modules/.bin/cypress run --spec cypress/integration/shop.js",
+    "cy:shop.headed": "node_modules/.bin/cypress run --spec cypress/integration/shop.js --headed",
+    "cy:shopandurl": "node_modules/.bin/cypress run --spec cypress/integration/shop.js --headed --env url=something.com",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "cypress": "^13.6.0"
+  }
+}
